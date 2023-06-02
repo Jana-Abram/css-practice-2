@@ -1,7 +1,19 @@
+:root {
+  background-color: darkcyan;
+}
+
 html {
   max-width: 720px;
 }
 
 body {
+  background: #fff;
+}
+
+*{
+  color: darkred;
+}
+
+.box{
   background: #fff;
 }
