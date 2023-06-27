@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="logo">
+    <span class="logo_text">{{header.brandName}}</span>
+  </div>
+  <nav class="nav_links">
+    {{#each header.links}}
+    <a href="{{this.url}}" class="nav_link">{{this.text}}</a>
+    {{/each}}
+  </nav>
+</header>
+<div class="header-line"></div>
+
+<div class="header_top">
+  <div class="ad"> 
+    <span class="ad_text">AD </span> 
+    <span class="ad_header">{{header.ad.text}} <a href="{{header.ad.url}}">{{header.ad.url}}</a></span>
+  </div>
+  <div class="user_online">
+    User Online: {{header.userOnline}}
+  </div>
+</div>

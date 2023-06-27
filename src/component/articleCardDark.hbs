@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Our Articles</h2>
+    <div class="view-all-button-container">
+      <button class="view-all-button">View All</button>
+    </div>
+  </div>
+
+  <div class="row">
+    {{#each articles}}
+       <div class="card">
+       <img src="{{photo}}" alt="Article Photo">
+      {{#if isNew}}
+        <span class="new_badge">NEW</span> 
+      {{/if}}
+      <div class="card-content">
+        <h3 class="card-title">{{name}}</h3>
+        <p class="card-description">{{description}}</p>
+        <button class="card-button">Read More</button>
+      </div>
+     </div>
+    {{/each}}
+  </div>
+</div>
