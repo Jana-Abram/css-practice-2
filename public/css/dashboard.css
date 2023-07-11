@@ -575,7 +575,7 @@ body{
   
        @media screen and (max-width: 768px) {
         .purchase--container {
-            grid-template-columns: 1fr; /* Відображати в один стовпчик на телефонах */
+            grid-template-columns: 1fr;
         }
       }
         .purchase{
